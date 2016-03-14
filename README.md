@@ -2,13 +2,13 @@
 
 ![inator](http://i.imgur.com/Hc9u9wz.jpg)
 
-Behold my latest inator! Generate files full of random bytes.  Good for tests.  Sorta. 
+Behold my latest inator! Generate files full of random bytes.  Good for tests. 
 
-Install:
+### Installation
 
 `npm install -g fileinator`
 
-Usage:
+### Usage
 
 `fileinator make 10gb ./bigfile`
 
