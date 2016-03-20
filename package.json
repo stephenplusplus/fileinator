@@ -4,7 +4,8 @@
   "description": "A simple utility to generate files with a specified size and random content.  ",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha"
   },
   "repository": {
     "type": "git",
@@ -25,10 +26,11 @@
     "yargs": "^4.2.0"
   },
   "devDependencies": {
+    "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
     "node-uuid": "^1.4.7"
   },
-  "engines": { 
-    "node" : ">=4.0" 
+  "engines": {
+    "node": ">=4.0"
   }
 }
