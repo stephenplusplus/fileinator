@@ -1,14 +1,29 @@
 #!/usr/bin/env node
-var fileinator = require('../lib/fileinator');
-var sizeParser = require('filesize-parser');
+'use strict';
+const fileinator = require('../lib/fileinator');
+const sizeParser = require('filesize-parser');
+const ProgressBar = require('progress');
+const util = require('util');
 
 require('yargs')
   .usage('Usage: $0 <size> <path>')
   .example('$0 make 2mb ./bigfile', 'Create a 2MB file named `bigfile` in the current directory.')
   .command('make <size> <path>', 'Make a big file', {}, function (argv) {
     console.log(`you want me to make a file that named ${argv.path} that's ${argv.size}`);
-    var size = sizeParser(argv.size);
-    fileinator.writeFile(size, argv.path);
+    let size = sizeParser(argv.size);
+
+    let bar = new ProgressBar('creating [:bar] :percent :etas', { 
+      complete: '=',
+      incomplete: ' ',
+      total: size
+    });
+
+    fileinator.writeFile(size, argv.path)
+      .on('progress', (data) => {
+        bar.tick(data.bytesWritten);
+      }).on('done', () => {
+        console.log(`Complete: ${argv.path}`);
+      });
   })
   .help('h')
   .alias('h', 'help')
