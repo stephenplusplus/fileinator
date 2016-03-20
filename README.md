@@ -1,7 +1,7 @@
 # fileinator
 
 [![Build Status](https://travis-ci.org/JustinBeckwith/fileinator.svg?branch=master)](https://travis-ci.org/JustinBeckwith/fileinator)
-[![Coverage Status](https://coveralls.io/repos/github/JustinBeckwith/fileinator/badge.svg?branch=master)](https://coveralls.io/github/JustinBeckwith/fileinator?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/JustinBeckwith/fileinator/badge.svg?branch=master&trick=me)](https://coveralls.io/github/JustinBeckwith/fileinator?branch=master)
 
 Behold my latest inator! Generate files full of random bytes.  Good for tests. 
 
