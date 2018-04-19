@@ -2,10 +2,10 @@ const assert = require('assert');
 const fileinator = require('../lib/fileinator');
 const sizeParser = require('filesize-parser');
 const fs = require('fs');
-const uuid = require('node-uuid');
+const uuid = require('uuid');
 
 describe('fileinator', function() {
-  
+
   it('should generate the correctly sized file', function (done) {
     var path = uuid.v4();
     const size = sizeParser("20mb");
@@ -51,5 +51,5 @@ describe('fileinator', function() {
         });
       });
   });
-  
+
 });
