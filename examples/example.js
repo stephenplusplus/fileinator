@@ -6,8 +6,8 @@
 const fileinator = require('../lib/fileinator');
 const sizeParser = require('filesize-parser');
 
-const size = sizeParser("20mb");
-const path = "./data.dat";
+const size = sizeParser('20mb');
+const path = './data.dat';
 
 fileinator.writeFile(size, path)
   .on('progress', (data) => {
