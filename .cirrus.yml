@@ -22,7 +22,7 @@ commit_lint_task:
 
 coverage_task:
   env:
-    CODECOV_TOKEN: ENCRYPTED[750eb3c966bdd3472a953856902500c28d7785af18131d3045650172d4351bf91617be1f2b4a913a423f5d6fb21a11b8]
+    CODECOV_TOKEN: ENCRYPTED[fd716b8f8f9b64712c6998612b21c0394a986b81c4fbdd82b48de183b92250b6d09c1ed047b42e4f92b9a6e61281d05d]
   script:
     - npm install
     - npm test
