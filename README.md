@@ -1,10 +1,11 @@
 # fileinator
 
-[![Build Status](https://travis-ci.org/JustinBeckwith/fileinator.svg?branch=master)](https://travis-ci.org/JustinBeckwith/fileinator)
-[![Coverage Status](https://coveralls.io/repos/github/JustinBeckwith/fileinator/badge.svg?branch=master&trick=me)](https://coveralls.io/github/JustinBeckwith/fileinator?branch=master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/JustinBeckwith/fileinator.svg)](https://greenkeeper.io/)
+[![npm version](https://img.shields.io/npm/v/fileinator.svg)](https://www.npmjs.org/package/fileinator)
+[![Build Status](https://api.cirrus-ci.com/github/JustinBeckwith/fileinator.svg)](https://cirrus-ci.com/github/JustinBeckwith/fileinator)
+[![codecov](https://codecov.io/gh/JustinBeckwith/fileinator/branch/master/graph/badge.svg)](https://codecov.io/gh/JustinBeckwith/fileinator)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-Behold my latest inator! Generate files full of random bytes.  Good for tests. 
+> Behold my latest inator! Generate files full of random bytes.  Good for tests.
 
 ![inator](http://i.imgur.com/Hc9u9wz.jpg)
 

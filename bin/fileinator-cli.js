@@ -3,8 +3,8 @@
 const fileinator = require('../lib/fileinator');
 const sizeParser = require('filesize-parser');
 const ProgressBar = require('progress');
-const util = require('util');
 
+// eslint-disable-next-line
 require('yargs')
   .usage('Usage: $0 <size> <path>')
   .example('$0 make 2mb ./bigfile', 'Create a 2MB file named `bigfile` in the current directory.')
@@ -12,7 +12,7 @@ require('yargs')
     console.log(`you want me to make a file that named ${argv.path} that's ${argv.size}`);
     let size = sizeParser(argv.size);
 
-    let bar = new ProgressBar('creating [:bar] :percent :etas', { 
+    let bar = new ProgressBar('creating [:bar] :percent :etas', {
       complete: '=',
       incomplete: ' ',
       total: size
@@ -27,4 +27,4 @@ require('yargs')
   })
   .help('h')
   .alias('h', 'help')
-  .argv
+  .argv;
