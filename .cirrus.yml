@@ -39,5 +39,4 @@ publish_task:
     NPM_TOKEN: ENCRYPTED[0c331a8c6fdb5766af02b16ef6fa5ba0c7ee8db74a1515032db5e835c28e8a9f764e0b169f5082da7b098b383b1ff031]
   script:
     - npm install
-    - npm run compile
     - npx semantic-release
